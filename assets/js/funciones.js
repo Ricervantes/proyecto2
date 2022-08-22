@@ -27,8 +27,8 @@ iconoBorrar.innerHTML='delete_forever';
 
 divContacto.classList.add('tarea');
 iconoBorrar.classList.add('material-symbols-outlined', 'icono');
-iconoBorrar.onclick = (local, id)=>{
-    local.remoteItem(id);
+iconoBorrar.onclick = (local, contacto)=>{
+    local.remoteItem(contacto.id);
     window.localStorage.href='/';
 }
 
