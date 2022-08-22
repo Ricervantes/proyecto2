@@ -1,0 +1,149 @@
+*,
+::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(241, 239, 239, 0.9);
+    text-align: left;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.html {
+    font-family: 'poppins', sans-serif;
+    font-size: 62.5%;
+
+}
+
+.container {
+    height: 100px;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.container h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    font: 2.3rem;
+}
+
+
+.site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.footer {
+    margin-top: 200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .85);
+    color: white;
+}
+
+.cuadro-gris {
+    background-color: #bdbcbc;
+    width: 300px;
+    height: 300px;
+}
+
+.btn-danger:not(:disabled):not(.disabled).active,
+.btn-danger:not(:disabled):not(.disabled):active,
+.show>.btn-danger.dropdown-toggle {
+    color: #fff;
+    background-color: #bd2130;
+    border-color: #b21f2d;
+}
+
+.formulario-datos {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-datos input {
+    margin: 1rem 0rem;
+    line-height: 3rem;
+    background: none;
+    outline: 0;
+    border: 0;
+    color: white;
+}
+
+.formulario-datos input:active {
+    border-bottom: 1px solid dodgerblue;
+
+}
+
+.formulario-datos input:focus {
+    border-bottom: 1px solid dodgerblue;
+
+}
+
+.formulario-datos button {
+    margin: 1rem 0rem;
+    background-color: dodgerblue;
+    border: 0;
+    outline: 0;
+    height: 3rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.listado-tareas {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+
+.material-symbols-outlined {
+
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48,
+    
+}
+
+.material-symbols-outlined{
+
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.icono {
+    color: tomato;
+    cursor: pointer;
+
+}
