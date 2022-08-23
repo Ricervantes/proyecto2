@@ -1,105 +1,102 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <link rel="stylesheet" href="./assets/style.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
 
-        <title>contactos</title>
-    </head>
+  <title>contactos</title>
+</head>
 
-    <body>
-        <!--nav(parte superior)-->
+<body>
+  <!--nav(parte superior)-->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-          <!--agenda-->
-        <div class="container">
-            <!--head-->
-            <h1>Agenda de contactos</h1>
-            <!--formulario de datos-->
-            <div class="formulario-datos">
-                <input type="text" class="nombre" placeholder="nombre">
-                <input type="text" class="numero" placeholder="numero">
-                <input type="text" class="direccion" placeholder="direccion">
-                <button class="btn-agregar-tarea">Agregar tarea</button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <!--listado de tares -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!--agenda-->
+  <div class="container">
+    <!--head-->
+    <h1>Agenda telefonica</h1>
+    <!--formulario de datos-->
+    <div class="formulario-datos">
+      <input type="text" class="nombre" placeholder="nombre" id="nombreInput">
+      <input type="text" class="numero" placeholder="numero" id="numeroInput">
+      <input type="text" class="direccion" placeholder="direccion" id="direccionInput">
+      <button class="btn-agregar-tarea" onclick="agregarContacto()"> Agregar nuevo contacto</button>
+      <span class="material-symbols-outlined">
+        edit_note
+        </span>
+       
+      <!--listado de tares -->
 
-                <div class="listado-tareas">
-                
-                        <!--ICONO DE BORRAR-->
-                        <link rel="stylesheet"
-                            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-                        <span class="material-symbols-outlined">
-                            delete
-                        </span>
-                        <!--editar-->
-                        <span class="material-symbols-outlined ">
-                            edit_note
-                        </span>
-                    </div>
+      <div class="col-md-12 mt-3">
+        <ul class="list-group" id="listado-contactos">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                A list item
+                <button type="button" class="btn btn-danger btn-sm"> X</button>
+            </li>
+        </ul>
+    </div>
 
-                </div>
-                <div class="tarea">
-               
-                    <!--ICONOMO DE BORRAR -->
-                    <link rel="stylesheet"
-                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-                    <span class="material-symbols-outlined">
-                        delete
-                    </span>
-                    <!--editar-->
-                    <span class="material-symbols-outlined">
-                        edit_note
-                    </span>
-                </div>
-            </div>
 
-        </div>
-        </div>
+      <!--ICONOMO DE BORRAR -->
 
-    </body>
 
-    <script src="assets/./js/funciones.js"></script>
-    <script src="assets/js/main.js"></script>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <!--footer-->
+
+</body>
+
+<!---<script src="assets/./js/funciones.js"></script>-->
+<script src="assets/js/Contacto.js"></script>
+<script src="assets/js/main.js"></script>
 
 </html>

@@ -1,7 +1,7 @@
 class Contacto {
-    constructor(nombre, telefono, descripcion) {
+    constructor(nombre, telefono, direccion) {
         this.nombre = nombre;
         this.telefono = telefono;
-        this.descripcion = descripcion;
+        this.direccion = direccion;
     }
 }

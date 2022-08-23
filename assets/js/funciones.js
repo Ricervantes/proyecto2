@@ -1,4 +1,4 @@
-const guardarContacto = (local, contacto) => {
+/*const guardarContacto = (local, contacto) => {
     local.setItem(contacto.id, JSON.stringify(contacto));
     //este es para recargar y refrescar la pagina.
     window.location.href = '/';
@@ -41,4 +41,4 @@ parentNode.appendChild(divContacto);
 
 
 
-}
+}*/
