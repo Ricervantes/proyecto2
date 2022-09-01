@@ -57,12 +57,12 @@ function actualizarLista() {
         iconoBasura.classList.add("fa", "fa-trash");
         btnEliminar.appendChild(iconoBasura);
 
-        btnEliminar.classList.add("btn", "btn-danger", "float-right");
+        btnEliminar.classList.add("btn", "btn-danger", "float-inherit", "mr-2" );
         btnEliminar.addEventListener("click", () => deleteIndividual(contacto.nombre));
         li.appendChild(btnEliminar);
 
         const btnedit = document.createElement("button");
-        btnedit.classList.add("btn", "btn-warning", "float-right", "mr-2");
+        btnedit.classList.add("btn", "btn-warning", "float-inherit", "mr-2");
 
         const iconoEdit = document.createElement("i");
         iconoEdit.classList.add("fa", "fa-edit");
